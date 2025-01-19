@@ -161,11 +161,15 @@ class Graph : public Component {
   uint32_t get_duration() { return duration_; }
   uint32_t get_width() { return width_; }
   uint32_t get_height() { return height_; }
+  float get_value_min() { return value_min_; }
+  float get_value_max() { return value_max_; }
 
  protected:
   uint32_t duration_;  /// in seconds
   uint32_t width_;     /// in pixels
   uint32_t height_;    /// in pixels
+  float value_min_;
+  float value_max_;
   float min_value_{NAN};
   float max_value_{NAN};
   float min_range_{1.0};
