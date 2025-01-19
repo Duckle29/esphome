@@ -168,8 +168,8 @@ class Graph : public Component {
   uint32_t duration_;  /// in seconds
   uint32_t width_;     /// in pixels
   uint32_t height_;    /// in pixels
-  float value_min_;
-  float value_max_;
+  float value_min_{NAN};
+  float value_max_{NAN};
   float min_value_{NAN};
   float max_value_{NAN};
   float min_range_{1.0};
