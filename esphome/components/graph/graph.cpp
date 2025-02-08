@@ -136,8 +136,8 @@ void Graph::draw(Display *buff, uint16_t x_offset, uint16_t y_offset, Color colo
   }
 
   // Store graph limts
-  this->value_max_ = ymax;
-  this->value_min_ = ymin;
+  this->graph_limit_max_ = ymax;
+  this->graph_limit_min_ = ymin;
 
   /// Draw grid
   if (!std::isnan(this->gridspacing_y_)) {
