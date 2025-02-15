@@ -161,8 +161,8 @@ class Graph : public Component {
   uint32_t get_duration() { return duration_; }
   uint32_t get_width() { return width_; }
   uint32_t get_height() { return height_; }
-  float get_min_value() { return graph_limit_min_; }
-  float get_max_value() { return graph_limit_max_; }
+  float get_graph_limit_min() { return graph_limit_min_; }
+  float get_graph_limit_max() { return graph_limit_max_; }
 
  protected:
   uint32_t duration_;  /// in seconds
